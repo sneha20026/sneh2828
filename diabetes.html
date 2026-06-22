@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:55px 8%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    margin-top: 20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: auto;
+    margin-left:0px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+    
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 420px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+
+}
+h8{
+     font-size: 30px;
+     color: #1b5e20;
+     font-weight:bold;
+
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+
+.image-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-container img{
+    width:45%;
+    height:auto;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+} 
+@media (max-width:600px){
+
+
+
+    *
+ /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        margin-top: 60px;
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+  
+  
+    .kidney-content h2{
+        font-size:25px;
+    }
+
+    .kidney-content p{
+        font-size:18px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:100%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:26px;
+    }
+
+    .disease-detail-content p{
+        font-size:18px;
+    }
+       
+      
+    
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h7{
+        font-size: 18px;
+    }
+    h1{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:25px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+        font-size: 17px;
+    }
+
+    li{
+        font-size: 17px;
+    }
+   
+
+    .image-container{
+        flex-direction:column;
+    }
+
+    .image-container img{
+        width:100%;
+    }
+
+
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For Diabetes</h2>
+
+        <p>
+In Ayurveda, diabetes is commonly referred to as Madhumeha, a type of Prameha disorder. It is characterized by elevated blood sugar levels and disturbances in the body's metabolism. Ayurveda views diabetes as a condition resulting from imbalances in the doshas, particularly Kapha Dosha, along with impaired digestion (Agni) and metabolic dysfunction.</br>
+
+
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support kidney and gall bladder stone
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h2>Know More About Diabetes<h2>
+             <p>Diabetes mellitus is a chronic metabolic disorder in which the body is unable to properly regulate blood sugar (glucose) levels. Glucose is the body's primary source of energy, and the hormone insulin, produced by the pancreas, helps move glucose from the bloodstream into the cells. When insulin production is insufficient or the body cannot use insulin effectively, blood sugar levels rise, leading to diabetes.</p>
+
+        
+
+             <h2>What Are Diabetes?</h2></br>
+               <p>Diabetes is a long-term condition characterized by elevated levels of glucose in the blood. If not managed properly, it can affect various organs and increase the risk of serious health complications.</p>
+                           <div class="image-container">
+    <img src="https://images.openai.com/static-rsc-4/-cZpdyQm1D_lfvCpv2Mpz4NELWnuunUQwUPfhr7xMJkwIwObGc6ddUSU_MSexdk0xz-6TUdEky0eouWYXHA2KT8DLs5GH27hUODIHeZ1fRdI-RM5zHErJnZYdB84IB0_j-i18dT1O3xDX52ZEm8LBJzbtLiQivKVn7GUodmYz4ry5_NZoG74jGGNFi7Hm0gs?purpose=fullsize" alt="Image 1">
+    
+</div>
+
+              <h3>Types of Diabetes</h3></br>
+
+              <h1>1. Type 1 Diabetes</h1></br>
+
+               <ul>
+                    <li>An autoimmune condition in which the body's immune system attacks insulin-producing cells in the pancreas.</li></br>
+                    <li>Usually develops during childhood or adolescence but can occur at any age.</li></br>
+                        <li>Requires lifelong insulin therapy.</li></br>
+                
+                    
+                      </ul>
+
+                      <h1>2. Type 2 Diabetes</h1></br>
+
+               <ul>
+                    <li>The most common type of diabetes.</li></br>
+                    <li>Occurs when the body becomes resistant to insulin or does not produce enough insulin.</li></br>
+                        <li>Often associated with obesity, physical inactivity, and genetic factors.</li></br>
+                
+                    
+                      </ul>
+
+                      
+                      <h1>3. Gestational Diabetes</h1></br>
+
+               <ul>
+                    <li>Develops during pregnancy.</li></br>
+                    <li>Usually resolves after childbirth but increases the risk of developing Type 2 diabetes later in life</li></br>
+                    
+                
+                
+                      </ul>
+
+                            
+                      <h1>4. Prediabetes</h1></br>
+
+               <ul>
+                    <li>A condition in which blood sugar levels are higher than normal but not high enough to be diagnosed as diabetes.</li></br>
+                    <li>Early lifestyle changes can help prevent progression to Type 2 diabetes.</li></br>
+                    
+                
+                
+                      </ul>
+
+          
+             <h3>Common Symptoms of Diabetes</h3></br>
+                            <ul>
+                    <li>Frequent urination</li></br>
+                    <li>Excessive thirst</li></br>
+                        <li>Increased hunger</li></br>
+                          <li>Unexplained weight loss</li></br>
+                           <li>Fatigue and weakness</li></br>
+                               <li>Blurred vision</li></br>
+                                   <li>Slow-healing wounds</li></br>
+                                       <li>Tingling or numbness in hands and feet</li></br>
+                    
+                      </ul>
+
+                      
+              <h3>Causes and Risk Factors</h3></br>
+
+              <h1>1. Type 1 Diabetes</h1></br>
+
+               <ul>
+                    <li>Autoimmune reactions</li></br>
+                    <li>Genetic predisposition</li></br>
+                        <li>Environmental triggers</li></br>
+                
+                    
+                      </ul>
+
+                       <h1>2. Type 1 Diabetes</h1></br>
+
+               <ul>
+                    <li>Obesity or excess body weight</li></br>
+                    <li>Physical inactivity</li></br>
+                        <li>Family history of diabetes</li></br>
+                           <li>Unhealthy diet</li></br>
+                              <li>Increasing age</li></br>
+                
+                    
+                      </ul>
+
+                      
+                      
+                  
+        
+
+                     
+                    
+
+
+                      
+
+
+
+                
+
+ 
+        
+                      
+                 <h3>Ayurvedic Treatment for Diabetes</h3></br> 
+
+                                  <p>
+In Ayurveda, diabetes is known as Madhumeha, one of the types of Prameha. It is considered a metabolic disorder caused by an imbalance of the doshas, particularly Kapha Dosha, along with weakened digestive fire (Mandagni) and the accumulation of toxins (Ama) in the body. Ayurvedic treatment focuses on balancing the doshas, improving metabolism, supporting healthy blood sugar levels, and enhancing overall well-being.
+            </p>
+                      
+ <h3>1. Herbal Remedies</h3></br>
+              <h1>1. Gudmar (Gymnema sylvestre)</h1></br>
+       
+                            <ul>
+                    <li>Traditionally known as the "sugar destroyer."</li></br>
+                    <li>Supports healthy glucose metabolism.</li></br>
+                       
+                            </ul>
+                              <h1>2. Karela (Bitter Gourd)</h1></br>
+       
+                            <ul>
+                    <li>Helps maintain healthy blood sugar levels.</li></br>
+                    <li>Supports digestive health</li></br>
+                       
+                            </ul>
+
+                              <h1>3. Methi (Fenugreek)</h1></br>
+       
+                            <ul>
+                    <li>Supports insulin sensitivity.</li></br>
+                    <li>Helps improve digestion and metabolism.</li></br>
+                       
+                            </ul>
+
+                                          <h1>4. Amla (Indian Gooseberry)</h1></br>
+       
+                            <ul>
+                    <li>Rich source of antioxidants and Vitamin C.</li></br>
+                    <li>Supports immunity and metabolic health.</li></br>
+                       
+                            </ul>
+
+
+            
+
+                    
+               
+
+                      <h3>2. Ayurvedic Therapies</h3></br>
+
+                                               <h1>Panchakarma</h1></br>
+       <p>A detoxification and rejuvenation therapy aimed at removing accumulated toxins and restoring balance within the body.</p>
+
+       <h1>Abhyanga</h1></br>
+       <p>A full-body massage using medicated oils that may help improve circulation, reduce stress, and promote relaxation.</p>
+
+       
+       <h1>Udvartana</h1></br>
+       <p>A herbal powder massage traditionally used to support metabolism and weight management.</p>
+              
+
+             
+
+                                   <h3>3. Diet Recommendations</h3></br>
+                <p>A balanced diet is considered essential for diabetes:</p> 
+
+              
+                                             <ul>
+                    <li>Eat high-fiber foods such as vegetables, legumes, and whole grains.</li></br>
+                    <li>Include bitter and astringent foods in the diet.</li></br>
+                    <li>Stay hydrated by drinking adequate water.</li></br>
+                      <li>Avoid excessive sugar, sweets, and sugary beverages.</li></br>
+                        <li>Limit processed, fried, and oily foods.</li></br>                    
+                       
+
+                      </ul>
+
+                                        <h3>4. Lifestyle Modifications</h3></br>
+                <p>A balanced diet is considered essential for Diabetes:</p> 
+
+              
+                                             <ul>
+                    <li>Engage in regular physical activity such as walking, yoga, and exercise.</li></br>
+                    <li>Maintain a healthy body weight.</li></br>
+                    <li>Practice stress management through meditation and breathing exercises.</li></br>
+                      <li>Ensure adequate sleep and a consistent daily routine.</li></br>
+                        <li>Avoid a sedentary lifestyle.</li></br>                    
+                       
+
+                      </ul>
+
+
+                    
+
+ 
+    
+
+      
+     <h3>Conclusion</h3></br>
+
+
+                             <p>
+ Diabetes is a manageable condition when detected early and treated appropriately. Regular monitoring, healthy lifestyle habits, proper medical care, and preventive measures can help individuals maintain good health and reduce the risk of complications.</br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+    
+</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:55px 8%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    margin-top: 20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: auto;
+    margin-left:0px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+    
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 420px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+
+}
+h8{
+     font-size: 30px;
+     color: #1b5e20;
+     font-weight:bold;
+
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+
+.image-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-container img{
+    width:45%;
+    height:auto;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+} 
+@media (max-width:600px){
+
+
+
+    *
+ /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        margin-top: 60px;
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+  
+  
+    .kidney-content h2{
+        font-size:25px;
+    }
+
+    .kidney-content p{
+        font-size:18px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:100%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:26px;
+    }
+
+    .disease-detail-content p{
+        font-size:18px;
+    }
+       
+      
+    
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h7{
+        font-size: 18px;
+    }
+    h1{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:25px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+        font-size: 17px;
+    }
+
+    li{
+        font-size: 17px;
+    }
+   
+
+    .image-container{
+        flex-direction:column;
+    }
+
+    .image-container img{
+        width:100%;
+    }
+
+
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For Arthritis</h2>
+
+        <p>
+In Ayurveda, arthritis is commonly referred to as Sandhivata (osteoarthritis) or Amavata (rheumatoid arthritis-like condition). It is primarily associated with an imbalance of Vata Dosha and the accumulation of Ama (toxins resulting from impaired digestion). This imbalance can lead to joint pain, stiffness, swelling, and reduced mobility.</br>
+
+
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support kidney and gall bladder stone
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h2>Know More About Arthritis<h2>
+                <p>Arthritis is a common condition that causes inflammation, pain, stiffness, and swelling in one or more joints. It can affect people of all ages, although it is more common in older adults. Arthritis can make everyday activities such as walking, climbing stairs, or gripping objects difficult and painful.</p>
+
+         
+
+             <h3>Common Types of Arthritis</h3></br>
+
+              <h1>1. Osteoarthritis (OA)</h1></br>
+                            <ul>
+                    <li>The most common type of arthritis.</li></br>
+                    <li>Occurs when the protective cartilage cushioning the ends of bones gradually wears away.</li></br>
+                        <li>Commonly affects the knees, hips, hands, and spine.</li></br>
+                    
+                      </ul>
+
+                      
+              <h1>2. Rheumatoid Arthritis (RA)</h1></br>
+                            <ul>
+                    <li>An autoimmune disorder in which the immune system mistakenly attacks the joints..</li></br>
+                    <li>Can cause joint damage, inflammation, and deformities if left untreated.</li></br>
+            
+                    
+                      </ul>
+                            <h1>3. Gout</h1></br>
+                            <ul>
+                    <li>Caused by the buildup of uric acid crystals in the joints.</li></br>
+                    <li>Often affects the big toe and causes sudden, severe pain.</li></br>
+            
+                    
+                      </ul>
+                                 <h1>4. Psoriatic Arthritis</h1></br>
+                            <ul>
+                    <li>Develops in some people with psoriasis.</li></br>
+                    <li>Causes joint pain, swelling, and skin symptoms.</li></br>
+            
+                    
+                      </ul>
+
+                                     <h1>5. Ankylosing Spondylitis</h1></br>
+                            <ul>
+                    <li>Primarily affects the spine.</li></br>
+                    <li>Can lead to chronic back pain and stiffness.</li></br>
+            
+                    
+                      </ul>
+
+                      
+            <div class="image-container">
+    <img src="https://images.openai.com/static-rsc-4/XKzje1eHe0wL_p1zEb4xnBVqBMoBsWVRhkIycMRsWoFQiOAaaEjuLqRSPAz0BnvGeKXEhux2GXgrEiw9ujmGwJH0YjhJicvuV_9jS7W8psugqu3uVTaccK86yuXJciKdi1Wc59Ax_1p5nKr3qIOGwoA5pvuxIjC5tbSKlg4UsUJmwXA-kiaf9FViwla5dBmI?purpose=fullsize" alt="Image 1">
+    <img src="https://images.openai.com/static-rsc-4/LBL1mCOECyxlTtqBi4jhps_gkycvoY6Aa2604paEqIxEwtIn_AwEFdKHE0VSoKe_W7Ux0PITlYyLb2R17MhQ6-JYr-j5V_rS3bjearEIUXzMjwdcVTcmWOyZaCQf9D68J-kbMSjyaC4R6OHZkL0de5XeEPzEDUQXXCEjjSrhx3w60tXZ_MQZQpKOti83HmnO?purpose=fullsize" alt="Image 2">
+</div>
+        
+
+                       <h3> Symptoms of Arthritis</h3></br>
+
+                                             <ul>
+                    <li>Joint pain</li></br>
+                    <li>Stiffness, especially in the morning</li></br>
+                    <li>Swelling around joints</li></br>
+                      <li>Redness and warmth in affected areas</li></br>
+                        <li>Reduced range of motion</li></br>                    
+                       <li>Difficulty moving or performing daily activities</li></br>
+                      <li>Weakness around affected joints</li></br>
+
+                      </ul>
+
+
+                      
+                       <h3> Causes of Arthritis </h3></br>
+<p>The causes vary depending on the type of arthritis and may include:</p>
+                                             <ul>
+                    <li>Age-related wear and tear of joints</li></br>
+                    <li>Autoimmune disorders</li></br>
+                    <li>Genetic factors</li></br>
+                      <li>Joint injuries</li></br>
+                        <li>Obesity and excess body weight</li></br>                    
+                       <li>Infections</li></br>
+                      <li>Metabolic disorders such as high uric acid levels</li></br>
+
+                      </ul>
+
+
+                
+
+ 
+        
+                      
+                 <h3>Ayurvedic Treatment for Arthritis</h3></br> 
+
+                                  <p>
+Ayurvedic treatment for arthritis is a holistic healing approach that focuses on balancing the doshas, improving digestion, removing accumulated toxins (Ama), reducing inflammation, relieving pain, and restoring joint function through herbal remedies, dietary modifications, lifestyle changes, and therapeutic procedures.
+            </p>
+                      
+ <h1>1. Herbal Remedies</h1></br>
+                <p>Ayurveda utilizes various herbs that are traditionally believed to support thyroid function and metabolic balance:</p> 
+
+                <ul>
+                    <li><h7>Ashwagandha</h7> – Helps strengthen muscles and joints.</li></br>
+                    <li><h7>Guggulu</h7> – Traditionally used to support healthy joints and mobility.</li></br>
+                    <li><h7>Shallaki (Boswellia)</h7> – Supports joint flexibility and comfort.</li></br>
+                     <li><h7>Nirgundi</h7> – Helps reduce swelling and stiffness.</li></br>
+                          <li><h7>Turmeric (Haridra)</h7> – Known for its natural anti-inflammatory properties.</li></br>
+                               <li><h7>Ginger (Shunthi)</h7> – Supports digestion and helps reduce joint discomfort.</li></br></br>
+                    
+                      </ul>
+
+                      <h1>2. Panchakarma Therapies</h1></br>
+                <p>Panchakarma therapies are often recommended to detoxify the body and restore balance:</p> 
+
+                <ul>
+                    <li><h7>Abhyanga</h7> – Helps strengthen muscles and joints.</li></br>
+                    <li><h7>Swedana</h7> – Herbal steam therapy to reduce stiffness and improve circulation.</li></br>
+                    <li><h7>Basti</h7> – Medicated enema therapy, especially beneficial for Vata disorders.</li></br>
+                     <li><h7>Pinda Sweda</h7> – Herbal poultice therapy applied to painful joints.</li></br>
+                          <li><h7>Virechana</h7> – Therapeutic purification aimed at eliminating toxins.</li></br>
+                               
+                    
+                      </ul>
+
+                                   <h1>3. Diet Recommendations</h1></br>
+                <p>A balanced diet is considered essential for arthritis management:</p> 
+
+              
+                                             <ul>
+                    <li>Warm and freshly cooked meals</li></br>
+                    <li>Green leafy vegetables</li></br>
+                    <li>Whole grains</li></br>
+                      <li>Turmeric, ginger, garlic, and cumin</li></br>
+                        <li>Fresh fruits rich in antioxidants</li></br>                    
+                       
+
+                      </ul>
+
+                                        <h1>4. Lifestyle Modifications</h1></br>
+                <p>A balanced diet is considered essential for arthritis management:</p> 
+
+              
+                                             <ul>
+                    <li>Practice gentle yoga and stretching exercises.</li></br>
+                    <li>Engage in regular walking and low-impact physical activity.</li></br>
+                    <li>Maintain a healthy body weight.</li></br>
+                      <li>Avoid excessive physical strain on affected joints.</li></br>
+                        <li>Ensure proper sleep and rest.</li></br>                    
+                       
+
+                      </ul>
+
+
+                    
+
+ 
+    
+
+      
+     <h3>Conclusion</h3></br>
+
+
+                             <p>
+  Arthritis is a condition that affects the joints and can significantly impact daily life. Early diagnosis, proper treatment, healthy lifestyle choices, and appropriate medical or Ayurvedic care can help manage symptoms, improve mobility, and maintain a better quality of life.</br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+    
+</section>
+
+
+
+</body>
+</html>

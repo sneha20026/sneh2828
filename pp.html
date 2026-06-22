@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:55px 8%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#1b5e20;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    margin-top: 20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: auto;
+    margin-left:0px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 300px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+
+}
+h8{
+     font-size: 30px;
+     color: #1b5e20;;
+     font-weight:bold;
+
+}
+.img{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:600px){
+
+
+
+    *
+ /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        margin-top: 60px;
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+  
+  
+    .kidney-content h2{
+        font-size:25px;
+    }
+
+    .kidney-content p{
+        font-size:18px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:100%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:26px;
+    }
+
+    .disease-detail-content p{
+        font-size:18px;
+    }
+       
+      
+    
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h7{
+        font-size: 18px;
+    }
+    h1{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:25px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+        font-size: 17px;
+    }
+
+    li{
+        font-size: 17px;
+    }
+   
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For PCOD & PCOS Disorder</h2>
+
+        <p>
+In Ayurveda, PCOD and PCOS are not described as a single disease but are understood as disorders caused by an imbalance of the Kapha and Vata doshas, along with weakened digestive fire (Mandagni) and the accumulation of toxins (Ama) in the body. These imbalances can affect the reproductive system (Artava Dhatu) and lead to symptoms such as irregular periods, weight gain, acne, excessive hair growth, and fertility issues.
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support liver
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h2>Know More About PCOD & PCOS Disorder</h2></br>
+           <p>PCOD (Polycystic Ovarian Disease) and PCOS (Polycystic Ovary Syndrome) are common hormonal disorders that affect women of reproductive age. These conditions can impact menstrual health, fertility, metabolism, and overall well-being. Although the terms are often used interchangeably, PCOS is generally considered a more complex hormonal and metabolic disorder than PCOD.</p> 
+
+            <h8>What is PCOD?</h8></br></br>
+
+
+            <p>
+         PCOD occurs when the ovaries produce immature or partially mature eggs, which can develop into cysts over time. The ovaries may become enlarged and produce excess male hormones (androgens), leading to hormonal imbalance.
+            </p>
+
+            
+            <h8>What is PCOS?</h8></br></br>
+
+
+            <p>
+        PCOS is a hormonal disorder characterized by irregular ovulation, elevated androgen levels, and the presence of multiple small cysts in the ovaries. It is associated with insulin resistance, inflammation, and metabolic disturbances that can affect various body systems.
+            </p>
+                        
+            <img src="https://images.openai.com/static-rsc-4/dJLilcnfwUEg9JwJ3HZkj3jvbvPT4pJIAWLxSSHJQXYR1rhldZUjzrso6AMqrKUN3r7DGQHS3ohYERQ4M2dMGCzFTYHqR0aMTivCnAjoyiI94vpquUt7NNBuBOzt86_00fNnvbj68ljvVb_60WabFGcEboLRRGPgK_iiS7e0zt47jYYKREFnd4rezL-XbBg1?purpose=fullsize" alt="" class="img">
+
+              <h3>Common Symptoms of PCOD & PCOS</h3>
+              </br>
+
+              <img src="https://images.openai.com/static-rsc-4/ng0T02VQ12LbaGScRcdYfmTF2oT69_HKNzdtp4H8pG9sGy80GZEpBWGsFu7rICQpMA_tp5Vk8UGY0gqENsmYefeKQN3-hPbMUqnSb9FmIN0Y-jdNu1_vhgjbwu_RsF4A6TeC8_HryDDm3-ofdjhJ8dcRKqqOPZ4B3YflzwNXXITBDjoW3qx2cj3jPOJsDwUJ?purpose=fullsize" alt="" class="img">
+               <ul>
+                     <li>Irregular or missed menstrual periods</li></br>
+                    <li>Excessive facial or body hair growth (hirsutism)</li></br>
+                    <li>Acne and oily skin</li></br>
+                      <li>Weight gain or difficulty losing weight</li></br>
+                      <li>Hair thinning or hair loss</li></br>
+                      <li>Darkening of skin, especially around the neck and underarms</li></br>
+                       <li>Difficulty conceiving or infertility</li></br>
+                        <li>Fatigue and low energy levels</li></br>
+                    
+                      </ul>
+
+                      <h3>Causes and Risk Factors</h3>
+              </br>
+
+               <ul>
+                     <li>Hormonal imbalance</li></br>
+                    <li>Insulin resistance</li></br>
+                    <li>Genetic predisposition</li></br>
+                      <li>Obesity or excess body weight</li></br>
+                      <li>Chronic inflammation</li></br>
+                      <li>Unhealthy dietary and lifestyle habits</li></br>
+                     
+                      
+                    
+                      </ul>
+    
+
+
+
+                        <h3>Ayurvedic Treatment for PCOD & PCOS Disorder</h3></br> 
+
+                                  <p>
+In Ayurveda, PCOD (Polycystic Ovarian Disease) and PCOS (Polycystic Ovary Syndrome) are considered disorders resulting from an imbalance of the Kapha, Vata, and sometimes Pitta Doshas. This imbalance can affect the reproductive system, metabolism, and hormonal functions. Ayurvedic treatment aims to restore hormonal balance, improve metabolism, regulate menstrual cycles, and support overall reproductive health.
+            </p>
+
+               <h3>Ayurvedic Approach to PCOD & PCOS</h3></br> 
+
+               
+                                  <p>
+Ayurveda focuses on treating the root cause rather than just managing symptoms. Treatment plans are individualized based on a person's body constitution (Prakriti) and the severity of the condition.
+            </p>
+  
+         <h1>1. Herbal Remedies</h1></br>
+         <p>Several Ayurvedic herbs are traditionally used to support hormonal and reproductive health:</p>
+             <ul>
+                    <li><h7>Shatavari (Asparagus racemosus)</h7> – Supports female reproductive health and hormonal balance</li></br>
+                    <li><h7>Ashoka (Saraca indica)</h7> – Helps maintain healthy menstrual cycles.</li></br>
+                     <li><h7>Lodhra (Symplocos racemosa)</h7> – Traditionally used for gynecological wellness.</li></br>
+                      <li><h7>Guduchi (Tinospora cordifolia)</h7> – Supports immunity and metabolism.</li></br>
+                       <li><h7>Triphala</h7> – Aids digestion and detoxification.</li></br>
+                        <li><h7> Aloe Vera</h7> – May help support menstrual regularity and overall reproductive health.</li></br>
+                    
+                    
+                    
+                      </ul>
+
+                      <h1>2. Panchakarma Therapies</h1></br>
+         <p>Ayurvedic detoxification therapies may be recommended under professional supervision:</p>
+             <ul>
+                    <li><h7>Virechana (Therapeutic Purgation)</h7> – Helps eliminate excess Pitta and toxins.</li></br>
+                    <li><h7>Basti (Medicated Enema)</h7> – Balances Vata dosha and supports reproductive health.</li></br>
+                     <li><h7>Udvartana (Herbal Powder Massage)</h7> – Often used to support weight management and improve circulation.</li></br>
+                       <li><h7>Abhyanga (Oil Massage)</h7> – Promotes relaxation and balances doshas.</li></br>
+                      
+                    
+                    
+                      </ul>
+
+                       <h1>3. Dietary Recommendations</h1></br>
+         <p>A healthy diet plays a vital role in managing PCOD and PCOS:</p>
+         <h7>Recommended Foods</h7></br></br>
+             <ul>
+                     <li>Fresh fruits and vegetables</li></br>
+                    <li>Include whole grains, legumes, and fiber-rich foods.</li></br>
+                    <li>Choose healthy fats such as nuts and seeds.</li></br>
+                      <li>Reduce refined sugar and processed foods.</li></br>
+                      <li>Avoid excessive oily, fried, and junk foods.</li></br>
+                      <li>Drink adequate water throughout the day.</li></br>
+                    
+                      </ul>
+
+                      
+                       <h1>4. Lifestyle Modifications</h1></br>
+         <p>A proper diet is essential for managing piles.</p>
+
+             <ul>
+                     <li>Engage in regular physical activity.</li></br>
+                    <li>Practice yoga and stretching exercises.</li></br>
+                    <li>Maintain a healthy body weight..</li></br>
+                      <li>Manage stress through meditation and mindfulness.</li></br>
+                      <li>Get adequate sleep and follow a consistent daily routine.</li></br>
+                    
+                    
+                      </ul>
+
+                       
+
+                         <h1>Ayurvedic Perspective</h1></br>
+
+                         <p>In Ayurveda, PCOD and PCOS are often associated with an imbalance of Kapha Dosha, Vata Dosha, and disturbances in the body's metabolic and reproductive systems. Ayurvedic management focuses on restoring hormonal balance, improving digestion and metabolism (Agni), detoxification, and supporting reproductive health through personalized diet, lifestyle modifications, herbal remedies, and therapeutic procedures.</p>
+            
+     <h3>Conclusion</h3></br>
+
+
+                             <p>
+  PCOD and PCOS are manageable conditions when identified early and treated appropriately. A combination of medical care, healthy lifestyle choices, and holistic approaches can help improve symptoms, regulate menstrual cycles, support fertility, and enhance overall quality of life.</br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+    
+</section>
+
+
+
+</body>
+</html>

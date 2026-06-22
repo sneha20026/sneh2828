@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:55px 8%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    margin-top: 20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: auto;
+    margin-left:0px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+    
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 420px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+
+}
+h8{
+     font-size: 30px;
+     color: #1b5e20;
+     font-weight:bold;
+
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+
+.image-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-container img{
+    width:45%;
+    height:auto;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+} 
+@media (max-width:600px){
+
+
+
+    *
+ /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        margin-top: 60px;
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+  
+  
+    .kidney-content h2{
+        font-size:25px;
+    }
+
+    .kidney-content p{
+        font-size:18px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:100%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:26px;
+    }
+
+    .disease-detail-content p{
+        font-size:18px;
+    }
+       
+      
+    
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h7{
+        font-size: 18px;
+    }
+    h1{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:25px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+        font-size: 17px;
+    }
+
+    li{
+        font-size: 17px;
+    }
+   
+
+    .image-container{
+        flex-direction:column;
+    }
+
+    .image-container img{
+        width:100%;
+    }
+
+
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For Digestion Problem</h2>
+
+        <p>
+In Ayurveda, digestive disorders are often linked to an imbalance of Agni (digestive fire). When Agni becomes weak (Mandagni) or disturbed, food is not digested properly, leading to symptoms such as indigestion, bloating, gas, acidity, constipation, and abdominal discomfort. Ayurvedic treatment focuses on restoring digestive strength, balancing the doshas, and promoting overall gut health.</br>
+
+
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support kidney and gall bladder stone
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h2>Know More About Digestion Problem<h2>
+                <p>Digestive problems are common health issues that affect the stomach, intestines, and other parts of the digestive system. They can interfere with the body's ability to break down food, absorb nutrients, and eliminate waste properly. While occasional digestive discomfort is normal, persistent symptoms may indicate an underlying digestive disorder that requires attention.</p>
+
+        
+
+             <h3>What Are Digestive Problems?</h3></br>
+               <p>Digestive problems refer to a range of conditions that affect the gastrointestinal (GI) tract. These issues can be temporary or chronic and may impact daily life, nutrition, and overall well-being.</p>
+                           <div class="image-container">
+    <img src="https://images.openai.com/static-rsc-4/y_NmeikB_dqUXr8cOfjY0KT5P9MrfyicadRysQ7Qu3HOjR3qMqnpiHoHs5Wq-NrSwBxHJXT2zC58t0BZ7d_db45qL1OPmuBRVaZfM64HN6-wShNgOw6jngpeG314OE0e3gaMqQP0o7yJqy5gQvpkEd61cSouafo4VYulrZZJfN7qJ8w0MjCt8OnuhZvxSTfp?purpose=fullsize" alt="Image 1">
+    
+</div>
+
+              <h3>  Types of Digestive Problems</h3></br>
+
+              <h1>1. Indigestion (Dyspepsia)</h1></br>
+
+              <p>Indigestion is a common digestive complaint characterized by discomfort or pain in the upper abdomen, often occurring after meals.</p>
+              <h7>symptoms</h7></br></br>
+                            <ul>
+                    <li>Bloating</li></br>
+                    <li>Nausea</li></br>
+                        <li>Burping</li></br>
+                          <li>Feeling full quickly</li></br>
+                           <li>Stomach discomfort</li></br>
+                    
+                      </ul>
+
+                      <h1>2. Acid Reflux (GERD)</h1></br>
+
+              <p>Acid reflux occurs when stomach acid flows back into the esophagus, causing irritation and heartburn.</p>
+              <h7>symptoms</h7></br></br>
+                            <ul>
+                    <li>Burning sensation in the chesth</li></br>
+                    <li>Sour taste in the mouth</li></br>
+                        <li>Difficulty swallowing</li></br>
+                          <li>Chronic cough</li></br>
+                      
+                    
+                      </ul>
+
+                      
+                      <h1>3. Gastritis</h1></br>
+
+              <p>Gastritis is inflammation of the stomach lining, which can be acute or chronic.</p>
+              <h7>symptoms</h7></br></br>
+                            <ul>
+                    <li>Upper abdominal pain</li></br>
+                    <li>Nausea</li></br>
+                        <li>Vomiting</li></br>
+                          <li>Loss of appetite</li></br>
+                      
+                    
+                      </ul>
+
+                      
+                         <h1>4. Constipation</h1></br>
+
+              <p>Constipation involves infrequent or difficult bowel movements.</p>
+              <h7>symptoms</h7></br></br>
+                            <ul>
+                    <li>Hard stool</li></br>
+                    <li>Straining during bowel movements</li></br>
+                        <li>Abdominal discomfort</li></br>
+                          <li>Feeling of incomplete evacuation</li></br>
+                      
+                    
+                      </ul>
+
+                                  <h1>5. Diarrhea</h1></br>
+
+              <p>Diarrhea is characterized by frequent, loose, or watery stools.</p>
+                    
+                      </ul>
+                                
+
+                      
+
+        
+
+                     
+                    
+
+
+                      
+                       <h3> Causes of Digestive Problems </h3></br>
+
+                       
+                         <h1>1. Unhealthy Eating Habits</h1></br>
+
+              <p>Poor eating habits are among the most common causes of digestive problems.</p>
+       
+                            <ul>
+                    <li>Overeating</li></br>
+                    <li>Eating too quickly</li></br>
+                        <li>Consuming excessive spicy or oily foods</li></br>
+                          <li>Eating processed and junk foods</li></br>
+                          <li>Irregular meal timings</li></br>
+                          <li>Low-fiber diet</li></br>
+
+                            </ul>
+
+                          
+                         <h1>2. Dehydration</h1></br>
+
+              <p>Insufficient water intake can slow digestion and lead to constipation.</p>
+       
+                            <ul>
+                    <li>Hard stools</li></br>
+                    <li>Difficulty passing stools</li></br>
+                        <li>Reduced digestive efficiency</li></br>
+                            </ul>
+
+                               <h1>3. Food Intolerance and Allergies</h1></br>
+
+              <p>Some individuals have difficulty digesting certain foods.</p>
+       
+                            <ul>
+                    <li>Lactose intolerance (milk and dairy products)</li></br>
+                    <li>Gluten sensitivity</li></br>
+                        <li>Food allergies</li></br>
+                            </ul>
+                         
+                                         <h1>4. Infections</h1></br>
+
+              <p>Bacterial, viral, or parasitic infections can affect the digestive tract.</p>
+       
+                            <ul>
+                    <li>Food poisoning</li></br>
+                    <li>Stomach flu (gastroenteritis)</li></br>
+                        <li>Intestinal parasite infections</li></br>
+
+                            </ul>
+
+
+
+                
+
+ 
+        
+                      
+                 <h3>Ayurvedic Treatment for Digestive Problem</h3></br> 
+
+                                  <p>
+According to Ayurveda, most digestive problems occur due to an imbalance of Agni (digestive fire) and the accumulation of Ama (toxins) in the body. When digestion becomes weak (Mandagni), food is not properly digested, leading to symptoms such as indigestion, bloating, gas, acidity, constipation, and abdominal discomfort. Ayurvedic treatment focuses on restoring digestive strength, balancing the doshas, and improving overall gut health.
+            </p>
+                      
+ <h1>1. Herbal Remedies</h1></br>
+            
+
+                <ul>
+                    <li><h7>Triphala</h7> – A traditional combination of three fruits that supports digestion, detoxification, and regular bowel movements.</li></br>
+                    <li><h7>Guggulu</h7> – Traditionally used to support healthy joints and mobility.</li></br>
+                    <li><h7>Ajwain (Carom Seeds)</h7> – Helps reduce gas, indigestion, and abdominal discomfort.</li></br>
+                     <li><h7>Jeera (Cumin)</h7> – Supports healthy digestion and improves appetite.</li></br>
+                          <li><h7>Hing (Asafoetida)</h7> – Traditionally used to relieve bloating, flatulence, and stomach cramps.</li></br>
+                               <li><h7>Ginger (Shunthi)</h7> – Known for stimulating digestion, reducing bloating, and relieving nausea.</li></br></br>
+                    
+                      </ul>
+
+                      <h1>2. Ayurvedic Therapies</h1></br>
+              
+
+                <ul>
+                    <li><h7>Deepana Therapy</h7> – Helps stimulate and strengthen digestive fire (Agni), improving digestion and metabolism.</li></br>
+                    <li><h7>Pachana Therapy</h7> – Supports the digestion and elimination of Ama (toxins) from the body.</li></br>
+                    <li><h7>Panchakarma</h7> – A comprehensive Ayurvedic detoxification program that helps cleanse the body and restore balance.</li></br>
+                     <li><h7>Abhyanga (Ayurvedic Oil Massage)</h7> – Promotes relaxation, improves circulation, and supports digestive function by reducing stress.</li></br>
+                      
+                               
+                    
+                      </ul>
+
+                                   <h1>3. Diet Recommendations</h1></br>
+                <p>A balanced diet is considered essential for digestion problem:</p> 
+
+              
+                                             <ul>
+                    <li>Eat freshly prepared, warm meals.</li></br>
+                    <li>Include easily digestible foods.</li></br>
+                    <li>Consume fiber-rich fruits and vegetables.</li></br>
+                      <li>Drink warm water throughout the day.</li></br>
+                        <li>Eat meals at regular times.</li></br>                    
+                       
+
+                      </ul>
+
+                                        <h1>4. Lifestyle Modifications</h1></br>
+                <p>A balanced diet is considered essential for arthritis management:</p> 
+
+              
+                                             <ul>
+                    <li>Practice gentle yoga and stretching exercises.</li></br>
+                    <li>Avoid eating when emotionally stressed or rushed.</li></br>
+                    <li>Manage stress through meditation and breathing exercises.</li></br>
+                      <li>Exercise regularly to improve digestion.</li></br>
+                        <li>Maintain a consistent daily routine.</li></br>                    
+                       
+
+                      </ul>
+
+
+                    
+
+ 
+    
+
+      
+     <h3>Conclusion</h3></br>
+
+
+                             <p>
+  Digestive problems can be caused by dietary choices, dehydration, infections, stress, lifestyle habits, medications, and underlying health conditions. Maintaining a balanced diet, staying hydrated, exercising regularly, and managing stress are essential for supporting healthy digestion and overall well-being.</br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+    
+</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:55px 8%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#1b5e20;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    margin-top: 20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: auto;
+    margin-left:0px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 300px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+
+}
+h8{
+     font-size: 30px;
+     color: #1b5e20;;
+     font-weight:bold;
+
+}
+.img{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:600px){
+
+
+
+    *
+ /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        margin-top: 60px;
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+  
+  
+    .kidney-content h2{
+        font-size:25px;
+    }
+
+    .kidney-content p{
+        font-size:18px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:100%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:26px;
+    }
+
+    .disease-detail-content p{
+        font-size:18px;
+    }
+       
+      
+    
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h7{
+        font-size: 18px;
+    }
+    h1{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:25px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+        font-size: 17px;
+    }
+
+    li{
+        font-size: 17px;
+    }
+   
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For piles Disease</h2>
+
+        <p>
+In Ayurveda, piles (hemorrhoids) are known as Arsha, a condition caused by the imbalance of the Vata, Pitta, and Kapha doshas, leading to swollen and inflamed veins in the rectal and anal region. Ayurveda aims to treat piles by addressing the root cause, improving digestion, relieving constipation, reducing inflammation, and promoting healthy bowel movements.
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support liver
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h2>Know More About Piles Disease</h2></br>
+
+            <h8>What are Piles?</h8></br></br>
+
+
+            <p>
+          Piles, also known as hemorrhoids, are swollen and enlarged veins in the lower rectum and anus. They develop when excessive pressure is placed on the veins in the anal region, causing them to become inflamed, swollen, and sometimes painful.
+            </p>
+
+            <p>Piles are a common condition affecting people of all ages, especially adults who suffer from chronic constipation, prolonged sitting, or straining during bowel movements.</p>
+
+
+                        
+            <img src="https://images.openai.com/static-rsc-4/hXxAjLc5Ws8UPM0xxuWWYMLHCebs7HbDicG7uGElFsPFiVMJMTVevshpRWKFSBGH_TZsaiB7-iNfI9NKTevDGJwfNFHV6_5qrIFhIgzUzLvWex2qoVFZkQYj9QSPuAkLB50vQK854MlaDH4Ewj3TlbI9jXu4RbQ5lGI9GSoeRCHJiOohAbnKXOLqPtoBNpZN?purpose=fullsize" alt="" class="img">
+
+              <h3>Types of Piles</h3>
+              </br>
+        
+         <h1>1. Internal Piles</h1></br>
+                            <ul>
+                    <li>Located inside the rectum.</li></br>
+                    <li>Usually painless because there are few pain-sensitive nerves in the rectum.</li></br>
+                     <li>May cause bleeding during bowel movements.</li></br>
+                      <li>Can protrude outside the anus in severe cases.</li></br>
+                      </ul>
+                      
+
+                      <h1>2. External Piles</h1></br>
+                        <ul>
+                    <li>Located under the skin around the anus.</li></br>
+                    <li>Can cause pain, itching, swelling, and discomfort.</li></br>
+                     <li>May form blood clots (thrombosed piles), leading to severe pain.</li></br>
+                      </ul>
+    
+                      <h1>3. Prolapsed Piles</h1></br>
+
+                       <ul>
+                    <li>Internal piles that extend outside the anal opening.</li></br>
+                    <li>May require manual repositioning or medical treatment.</li></br>
+                      </ul>
+                              
+                       <h1>4. Thrombosed Piles</h1></br>
+
+                       <ul>
+                    <li>Occur when a blood clot develops inside a hemorrhoid.</li></br>
+                    <li>Cause intense pain, swelling, and inflammation.</li></br>
+                
+                      </ul>
+
+                      
+              <h3>Common Symptoms of Piles</h3>
+              </br>
+        
+         <h1>Bleeding</h1></br>
+                            <ul>
+                    <li>Bright red blood during or after bowel movements.</li></br>
+                    <li>Blood may be seen on toilet paper or in the toilet bowl.</li></br>
+                    
+                      </ul>
+                      
+
+                      <h1>Pain and Discomfort</h1></br>
+                        <ul>
+                    <li>Pain while sitting or passing stools.</li></br>
+                    <li>Increased discomfort in severe cases.</li></br>
+    
+                      </ul>
+    
+                      <h1>Itching and Irritation</h1></br>
+
+                       <ul>
+                    <li>Persistent itching around the anus.</li></br>
+                    <li>Skin irritation due to mucus discharge.</li></br>
+                      </ul>
+                              
+                       <h1>Swelling</h1></br>
+
+                       <ul>
+                    <li>Lump or swelling near the anus.</li></br>
+                    <li>Tenderness in the affected area.</li></br>
+                
+                      </ul>
+
+
+                        <h3>Causes of Piles</h3></br>
+
+
+                       <ul>
+                    <li><h7>Chronic Constipation: </h7>Repeated straining during bowel movements increases pressure on rectal veins.</li></br>
+                    <li><h7>Chronic Diarrhea: </h7>Frequent bowel movements can irritate and inflame the anal region.</li></br>
+                    <li><h7>Low-Fiber Diet: </h7>A diet lacking fiber can lead to hard stools and constipation.</li></br>
+                     <li><h7>Prolonged Sitting: </h7>Sitting for long periods, especially on the toilet, increases pressure on anal veins.</li></br>
+                     <li><h7>Pregnancy: </h7>Growing pressure from the uterus and hormonal changes can contribute to piles.</li></br>
+                      <li><h7>Heavy Lifting: </h7>Regular lifting of heavy weights can strain the abdominal and rectal muscles.</li></br>
+                      <li><h7>Obesity: </h7>Excess body weight increases pressure on the pelvic and rectal veins.</li></br>
+                      </ul>
+
+                        <h3>Ayurvedic Treatment for Piles</h3></br> 
+
+                                  <p>
+In Ayurveda, piles are known as Arsha Roga, a disorder caused by the imbalance of the Vata, Pitta, and Kapha doshas, often associated with poor digestion (Mandagni), chronic constipation, and unhealthy dietary habits. Ayurvedic treatment aims to address the root cause of the condition, relieve symptoms, and prevent recurrence through a holistic approach.
+            </p>
+  
+         <h1>1. Herbal Remedies</h1></br>
+         <p>Ayurvedic herbs help improve digestion, soften stools, reduce inflammation, and promote healing.</p>
+             <ul>
+                    <li><h7>Triphala</h7> – Supports digestion and relieves constipation.</li></br>
+                    <li><h7>Haritaki</h7> – Helps regulate bowel movements.</li></br>
+                     <li><h7>Nagkesar</h7> – Nagkesar</li></br>
+                      <li><h7>Kutaj</h7> – Supports intestinal health and reduces irritation.</li></br>
+                       <li><h7>Aloe Vera</h7> – Soothes inflammation and promotes tissue healing.</li></br>
+                        <li><h7>Arshoghni Vati</h7> – A classical Ayurvedic formulation used for piles.</li></br>
+                    
+                    
+                    
+                      </ul>
+
+                       <h1>2. Dietary Management (Pathya)</h1></br>
+         <p>A proper diet is essential for managing piles.</p>
+         <h7>Recommended Foods</h7></br></br>
+             <ul>
+                     <li>Fresh fruits and vegetables</li></br>
+                    <li>Whole grains</li></br>
+                    <li>Green leafy vegetables</li></br>
+                      <li>Fiber-rich foods</li></br>
+                      <li>Buttermilk</li></br>
+                      <li>Adequate water intake</li></br>
+                    
+                      </ul>
+
+                      
+                       <h1>3. Lifestyle Modifications</h1></br>
+         <p>A proper diet is essential for managing piles.</p>
+
+             <ul>
+                     <li>Maintain regular bowel habits.</li></br>
+                    <li>Avoid straining during bowel movements.</li></br>
+                    <li>Exercise regularly.</li></br>
+                      <li>Avoid prolonged sitting.</li></br>
+                      <li>Stay hydrated throughout the day.</li></br>
+                      <li>Practice yoga and relaxation techniques.</li></br></br>
+                    
+                      </ul>
+
+                                    
+                       <h1>4. Ayurvedic Therapies</h1></br></br>
+           <ul>
+                    <li><h7>Kshara Karma</h7>
+                        </li>
+                        <p>A minimally invasive Ayurvedic procedure that uses medicated alkaline preparations to shrink hemorrhoidal tissue.</p></br>
+
+                        <li><h7>Kshara Sutra Therapy</h7>
+                        </li>
+                        <p>A specialized medicated thread treatment commonly used for advanced piles and other anorectal disorders.</p></br>
+
+                        <li><h7>Basti (Medicated Enema)</h7>
+                        </li>
+                        <p>Helps balance Vata dosha and improve bowel function.</p></br>
+
+                        <li><h7>Sitz Bath</h7>
+                        </li>
+                        <p>Warm water baths, often with herbal decoctions, help relieve pain, itching, and swelling.</p></br>
+
+           </ul>
+
+                         <h1>Benefits of Ayurvedic Treatment</h1></br>
+        
+             <ul>
+                     <li>Addresses the root cause of the disease.</li></br>
+                    <li>Improves digestion and metabolism.</li></br>
+                    <li>Relieves constipation naturally.</li></br>
+                      <li>Reduces pain, itching, swelling, and bleeding.</li></br>
+                      <li>Promotes healing of affected tissues.</li></br>
+                      <li>Helps prevent recurrence through diet and lifestyle correction.</li></br>
+             </ul>    
+                      
+
+                                          
+
+                  
+     <h3>Conclusion</h3></br>
+
+
+                             <p>
+    Ayurvedic treatment for piles offers a comprehensive and natural approach by combining herbal medicines, dietary changes, lifestyle improvements, and specialized therapies. By addressing both symptoms and underlying causes, Ayurveda aims to provide long-term relief and support overall digestive health.</br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+    
+</section>
+
+
+
+</body>
+</html>

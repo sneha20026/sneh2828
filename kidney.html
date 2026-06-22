@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:90px 10%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:60px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    margin-left: 70px;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 125%;
+    margin: auto;
+    margin-left:-90px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 420px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+}
+
+@media (max-width:600px){
+     /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        margin-top: 70px;
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+        margin-left: 2px;
+        
+
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+  
+  
+    .kidney-content h2{
+        font-size:25px;
+    }
+
+    .kidney-content p{
+        font-size:18px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:100%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:26px;
+    }
+
+    .disease-detail-content p{
+        font-size:18px;
+    }
+       
+      
+    
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h7{
+        font-size: 18px;
+    }
+    h1{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:25px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+        font-size: 17px;
+    }
+
+    li{
+        font-size: 17px;
+    }
+   
+}
+
+
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For Kidney Disease</h2>
+
+        <p>
+            Kidney disease affects the body's ability to remove waste
+            and maintain proper fluid balance. Common symptoms include
+            swelling, weakness, fatigue, frequent urination, and back pain.
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support kidney
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h4>KIDNEY CARE</h4>
+
+            <h2>Know More About Kidney Disease</h2>
+
+            <p>
+                Kidney disease affects the body's ability to filter
+                waste and extra fluids from the blood properly.
+                It can lead to swelling, weakness, fatigue,
+                back pain, and frequent urination problems.
+            </p>
+
+            <p>
+                Pragati Ayurveda provides natural homemade Ayurvedic
+                remedies prepared with pure herbs that help support
+                kidney health and improve body wellness naturally.
+            </p>
+
+
+
+            </br> </br>  </br>
+            
+
+            <h2>What is kidney Disease?</h2>
+
+            <p>
+              Kidney disease is a condition in which the kidneys are damaged and cannot filter waste, excess water, and toxins from the blood properly.
+            </p>
+
+            <img src="https://images.openai.com/static-rsc-4/4JQJpdQmQQ4Om8Fs84g014uS1RdXUZRsh10aEDpYacQ1RdwZ66C2DQgbkj0p1wYoRwYgXCD2XIAlM3L8C3DcSP_z_51oNWv20aQF-4G_9lSOgEmkF1TCXYQjTrGOR5MaA0tIiNShxBSlvVJJ6MsWE6xibR0_t5mMqLqxJKOIr7w?purpose=inline" alt="" class="big-image">
+
+
+            </br>  
+            </br> 
+            </br>
+
+              <h3>What Do Kidneys Do?</h3>
+              </br>
+            
+                <p>
+                The kidneys are two bean-shaped organs located on either side of the spine.Their functions:
+                <ul>
+                <li>Filtering waste products from the blood.</li></br>
+                    <li> Removing extra water through urine.</li></br>
+                    <li>Balancing minerals such as sodium and potassium.</li></br>
+                      <li>Helping control blood pressure.</li></br>
+                        <li>Producing hormones that support red blood cell production and bone health.</li></br>
+</ul>
+        </p>
+            
+         <h3>  Types of Kidney Disease</h3></br>
+
+         <h1>1. Chronic Kidney Disease (CKD)</h1></br>
+          <p>
+             A long-term condition where kidney function gradually declines over months or years.
+            </p>
+
+            <h6>Common causes:</h6>
+                      </br>
+                            <ul>
+                    <li>Diabetes</li></br>
+                    <li> Hypertension</li></br>
+                    <li>Kidney infections</li></br>
+                      <li>Genetic disorders</li></br>
+                      </ul>
+                      
+
+                      <h1>2. Acute Kidney Injury (AKI)</h1></br>
+          <p>
+             A sudden loss of kidney function that develops within hours or days.
+            </p>
+
+            <h6>Common causes:</h6>
+                      </br>
+                  
+                         <ul>
+                <li>Severe dehydration</li></br>
+                    <li>Serious infections</li></br>
+                    <li>Certain medications</li></br>
+                      <li>Reduced blood flow to the kidneys</li></br>
+                      </ul>
+
+
+                      
+                      <h1>3. Polycystic Kidney Disease (PKD)</h1></br>
+          <p>
+             An inherited disorder in which fluid-filled cysts grow inside the kidneys.
+            </p>
+
+            <h3>Symptoms of Kidney Disease:</h3>
+             </br>       
+             <p>
+            Early kidney disease may cause no symptoms. As it progresses, symptoms may include:
+            </p>
+            
+
+            <img src="https://www.hsmc.ae/wp-content/uploads/2025/02/Kidney-Failure-Symptoms.jpg" class="small-img"></br></br>
+            
+                      </br>
+                      <ul>
+                    <li>Fatigue and weakness</li></br>
+                    <li> Swelling in feet, ankles, or face</li></br>
+                    <li>Changes in urination (more or less frequent)</li></br>
+                      <li>Foamy or bloody urine</li></br>
+                      <li>Nausea and vomiting</li></br>
+                      <li>Loss of appetite</li></br>
+                      <li>Muscle cramps</li></br>
+                      <li>Itchy skin</li></br>
+
+                      </ul>
+
+                      
+                      <h1>4. Glomerulonephritis</h1></br>
+          <p>
+             Inflammation of the kidney's filtering units (glomeruli).
+            </p>
+
+            <h6>Common causes:</h6>
+                      </br>
+                      <ul>
+                    <li>Blood or protein in urine</li></br>
+                    <li>Swelling</li></br>
+                    <li>High blood pressure.</li></br>
+                      </ul>
+
+                                    
+                      <h1>5. Polycystic Kidney Disease (PKD)</h1></br>
+          <p>
+             An inherited disorder where multiple fluid-filled cysts develop in the kidneys.
+            </p>
+
+            <h6>Common causes:</h6>
+                      </br>
+                      <ul>
+                    <li>Enlarged kidneys</li></br>
+                    <li>High blood pressure</li></br>
+                    <li>Back or side pain</li></br></br>
+                      </ul>
+                  
+            
+                 <h3>Ayurvedic Concept and Management of Kidney Conditions</h3></br>      
+                    <p>
+            In Ayurveda, kidney disorders are not described exactly as modern medical diseases, but many kidney-related conditions are understood through concepts such as Mutravaha Srotas Dushti (disorders of the urinary system), Mutrakrichra (painful urination), Mutraghata (urinary obstruction), Ashmari (kidney/urinary stones), and fluid imbalance caused by disturbances of the Doshas—especially Vata, Pitta, and Kapha.
+
+               </p>    
+            <img src="https://images.openai.com/static-rsc-4/cCA3FsHKrAqj3fyqBgO4QFL8qufdoXCveCiQb2v2VtExeSQCI-_sFyrqck2krm8yZBgnvC88-9i36_X1HLyvkKIxteCwiTo885cMG4m8_Jfb0o_G8f_JiETdOJuaPA7LSvT3mtgjGKoxiUutYjVtm5ghAxLe3BOzJYSEBkKGxIE?purpose=inline" class="kidney-img"></br></br></br>
+
+
+            <h3>Preventing Aggravation of Kidney Conditions</h3></br></br>
+
+            <h6>1. Control Blood Pressure:</h6><p>Maintaining blood pressure within a healthy range to reduce stress on the kidneys and prevent further kidney damage.</p>
+
+             <h6>2. Manage Blood Sugar:</h6><p>Keeping blood glucose levels under control, especially in people with diabetes, to protect the kidneys from damage caused by high sugar levels.</p>
+
+             
+             <h6>3. Stay Hydrated</h6><p>Drinking an appropriate amount of water to help the kidneys remove waste products and maintain fluid balance in the body.</p>
+
+                 <h6>4. Avoid Smoking and Excess Alcohol</h6><p>Refraining from tobacco use and limiting alcohol consumption to reduce kidney damage and improve overall health.</p>
+
+                      <h6>5. Exercise Regularly</h6><p>Engaging in physical activity on a regular basis to improve blood circulation, control weight, and support kidney function.</p>
+
+                      <h6>6. Use Medicines Safely</h6><p>Taking medications only as prescribed and avoiding unnecessary or excessive use of drugs that may damage the kidneys.</p>
+
+                            <h6>7. Prevent and Treat Infections Early</h6><p>Recognizing and treating urinary tract and kidney infections promptly to prevent complications and kidney injury.</p></br>
+
+                <h3>Diet and Lifestyle for Kidney Health</h3></br>
+
+    <p>
+          Diet and lifestyle for kidney health refer to healthy eating habits, proper hydration, regular physical activity, and other daily practices that help maintain normal kidney function, prevent kidney diseases, and slow the progression of existing kidney conditions.
+               </p>   
+           
+               <img src="https://images.openai.com/static-rsc-4/ocvJUP6BxwCLeB3LA4QT7E_dn_It-VeG9tEHzFF38yRuCRGNm86B7848UFGCQxghLv1n912Ze2Y8oFTsqA0_IvUS16Gxo0MGh3_PeL1O0o6ops-4Cdq5310u31zXSyYeueMAbys3ngeS8DE74-zZhwouSo2toPh5l4KyiqwDicc?purpose=inline" class="pic"></br></br> 
+               
+               <h6>1. Balanced Diet</h6><p>Consuming a variety of nutritious foods that provide essential nutrients while reducing the burden on the kidneys.</p>
+
+               <h6>2. Adequate Hydration</h6><p>Drinking sufficient water to help the kidneys remove waste products and maintain fluid balance.</p>
+
+                   <h6>3. Control Protein Intake</h6><p>Consuming appropriate amounts of protein because excessive protein may increase the workload of the kidneys, especially in people with kidney disease.</p>
+
+                   <h6>4. Increase Fruits and Vegetables</h6><p>Including fresh fruits and vegetables in the diet to provide vitamins, minerals, antioxidants, and fiber.</p>
+
+                     <h6>5. Maintain Healthy Blood Sugar Levels</h6><p>Choosing foods that help regulate blood glucose and reduce the risk of diabetic kidney damage.</p>
+
+
+                      <h3>Ayurvedic Herbal Remedies</h3></br>
+
+                       <p>
+          Ayurvedic herbal remedies are plant-based medicines used in Ayurveda to help maintain the balance of the body's doshas (Vata, Pitta, and Kapha), support normal urinary and kidney functions, promote detoxification, and improve overall health. These remedies are traditionally used as part of a comprehensive treatment approach that includes diet, lifestyle modifications, and other Ayurvedic therapies.
+               </p>   
+
+               <h3>Ayurvedic Therapies for Kidney Conditions</h3></br>
+
+               
+                       <p>
+        Ayurvedic therapies for kidney conditions are traditional treatment methods used in Ayurveda to help balance the doshas (Vata, Pitta, and Kapha), support the urinary system (Mutravaha Srotas), improve overall health, and manage symptoms associated with kidney and urinary disorders.
+               </p>   
+
+
+               <h3>Conclusion</h3></br>
+
+
+                             <p>
+       Kidney conditions are disorders that affect the normal functioning of the kidneys, leading to problems in filtering waste products, maintaining fluid balance, and regulating essential body functions. Early diagnosis, proper medical treatment, a balanced diet, healthy lifestyle habits, and regular monitoring are important for preventing complications and slowing disease progression.
+       From an Ayurvedic perspective, kidney disorders are associated with imbalances in the doshas and disturbances of the Mutravaha Srotas (urinary system). Ayurvedic management includes dietary regulation, lifestyle modifications, herbal remedies, Panchakarma therapies, yoga, and stress management to support overall kidney and urinary health.</br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+
+              
+</section>
+
+
+
+</body>
+</html>
