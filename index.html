@@ -816,36 +816,8 @@ h2{
       input[type="checkbox"]{
         display: none;
     }
-    nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    position:relative;
-    display:inline-block;
-    padding-bottom:5px;
-    padding-top: 5px;
-}
 
-/* Underline Effect */
-nav ul li a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:1px;
-    width:0%;
-    height:2px;
-    background:rgb(254, 247, 49);
-    transition:0.4s;
-}
 
-/* Hover Effect */
-nav ul li a:hover::after{
-    width:100%;
-}
-
-nav ul li a:hover{
-    color:rgb(254, 247, 49);
-}
 
 @media(max-width:600px){
      .menu-icon{
@@ -872,17 +844,23 @@ nav ul li a:hover{
         border-radius: 3px;
         
     }
-    nav ul li a {
+    .nav-links a {
         color: #000000;
         padding: 10px;
         text-align: center;
+        transition: 0.4s;
     }
-     nav ul li a :hover {
-        color: #ffe167;
+     .nav-links :hover {
+        color: #083a72;
+          transform: translateY(-1px);
+
+       
+       
     }
 
-    nav ul li a::after{
-        transition: 0.3s;
+    .nav-links ::after{
+      
+     background: #083a72;
 
 }
     #menu:checked ~ nav ul{
