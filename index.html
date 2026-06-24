@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 <title>Pragati Ayurveda</title>
 
 <style>
@@ -807,16 +808,62 @@ h2{
     font-size:15px;
 }
 
+.menu-icon{
+    display: none;
+}
 
 
+      input[type="checkbox"]{
+        display: none;
+    }
 
 @media(max-width:600px){
+
+     .menu-icon{
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin-left: auto;
+        right: 20px;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+        position: absolute;
+
+    }
+
+    nav{
+        position: relative;
+    }
+
+    .nav-links{
+        position: absolute;
+        top:100%;
+        right: 0px;
+        width: 220px;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        display: none;
+        border: 1px solid #ddd;
+    }
+
+    #menu:checked ~ .nav-links{
+        display: flex;
+    
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    
+
 
 
     /* Header */
 
     header{
         padding:15px 5%;
+        height: 70px;
     }
 
     .logo{
@@ -825,7 +872,9 @@ h2{
 
     nav ul{
         flex-direction:column;
+
     }
+    
 
     /* Hero */
 
@@ -1016,8 +1065,16 @@ h4{
 <header>
     <div class="logo">Pragati Ayurveda</div>
 
+    <!--Menu-->
+
+
+<input type="checkbox" id="menu">
+<label for="menu" class="menu-icon">
+    <i class="ri-menu-line"></i>
+</label>
+
     <nav>
-        <ul>
+        <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#disease">Diseases</a></li>
