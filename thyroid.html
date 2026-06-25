@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Document</title>
 </head>
     <style>
@@ -322,35 +323,99 @@ h8{
     margin-top: 10px;
     margin-bottom: 10px;
 } 
+
+.menu-icon{
+    display: none;
+}
+
+
+      input[type="checkbox"]{
+        display: none;
+    }
 @media (max-width:600px){
 
 
-
-    *
- /* Header */
-    header{
-        flex-direction:column;
-        padding:15px;
+     .menu-icon{
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin-left: auto;
+        right: 20px;
+        top: 50%;
+        cursor: pointer;
     }
 
+    .nav-links{
+        display: none;
+        position: absolute;
+        top:100%;
+        right: 0px;
+        margin: auto;
+        width: 150px;
+        background: rgb(0, 0, 0);
+        opacity: 80%;
+        flex-direction: column;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        
+    }
+    .nav-links a {
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        transition: 0.4s;
+        right: 25px;
+    }
+     .nav-links :hover {
+        color: #f4e651;
+          transform: translateY(-1px);
+    }
+
+    .nav-links ::after{
+      
+     background: #f4e651;
+
+}
+    #menu:checked ~ nav ul{
+        display: flex;
+    
+    }
+    input[type="checkbox"]{
+        display: none;
+        
+    }
+    
     .logo{
         font-size:22px;
         margin-bottom:10px;
     }
+    
+
+
+
+     /* Header */
+       header{
+        padding:15px 5%;
+        height: 70px;
+    }
+
+    .logo{
+        font-size:20px;
+        margin-top: 10px;
+        padding: 2px;
+    }
 
     nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
+        flex-direction:column;
+
     }
 
-    nav ul li{
-        margin:8px 10px;
-    }
 
        /* Consultation Form */
     .consultation-box{
         order: -1;
-        margin-top: 60px;
+        margin-top: 10px;
         width:100%;
         padding:20px;
         position:relative;
@@ -492,14 +557,22 @@ h8{
     <header>
     <div class="logo">Pragati Ayurveda</div>
 
+    <input type="checkbox" id="menu">
+<label for="menu" class="menu-icon">
+    <i class="ri-menu-line"></i>
+</label>
+
     <nav>
+                <ul class="nav-links">
+
+  
         <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#disease">Diseases</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#disease">Diseases</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </nav>
 </header>

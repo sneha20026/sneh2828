@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Document</title>
 </head>
     <style>
@@ -303,6 +303,7 @@ h8{
     margin-bottom: 20px;
 }
 
+
 .menu-icon{
     display: none;
 }
@@ -311,7 +312,6 @@ h8{
       input[type="checkbox"]{
         display: none;
     }
-
 @media (max-width:600px){
 
 
@@ -330,7 +330,7 @@ h8{
         position: absolute;
         top:100%;
         right: 0px;
-      text-align: center;
+        margin: auto;
         width: 150px;
         background: rgb(0, 0, 0);
         opacity: 80%;
@@ -338,7 +338,6 @@ h8{
         padding: 15px;
         border: 1px solid #ddd;
         border-radius: 3px;
-
         
     }
     .nav-links a {
@@ -365,10 +364,18 @@ h8{
     input[type="checkbox"]{
         display: none;
         
+    }
+    
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
     
 
-        /* Header */
-     header{
+
+
+     /* Header */
+       header{
         padding:15px 5%;
         height: 70px;
     }
@@ -383,10 +390,12 @@ h8{
         flex-direction:column;
 
     }
+
+
        /* Consultation Form */
     .consultation-box{
         order: -1;
-        margin-top: 20px;
+        margin-top: 10px;
         width:100%;
         padding:20px;
         position:relative;
@@ -518,16 +527,18 @@ h8{
     <header>
     <div class="logo">Pragati Ayurveda</div>
 
-        <!--Menu-->
+            <!--Menu-->
 
-    <input type="checkbox" id="menu">
+
+<input type="checkbox" id="menu">
 <label for="menu" class="menu-icon">
     <i class="ri-menu-line"></i>
 </label>
 
     <nav>
                 <ul class="nav-links">
- 
+
+   
         <ul>
             <li><a href="index.html#hero">Home</a></li>
             <li><a href="index.html#about">About</a></li>
