@@ -349,6 +349,39 @@ h2{
 }
 
 
+.patients-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.patients-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1b5e20;
+    margin-bottom: 40px;
+}
+
+.patientSlider {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.patientSlider .swiper-slide {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.patientSlider iframe {
+    width: 25%;
+    border-radius: 12px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
+}
+
 /* WHY CHOOSE US */
 
 .choose-section{
@@ -895,7 +928,7 @@ h2{
     /* Hero */
 
     .hero{
-        height:80vh;
+        height:35vh;
         padding:20px;
         margin-top: 50px;
         
@@ -904,11 +937,11 @@ h2{
     }
 
     .hero-content h1{
-        font-size:32px;
+        font-size:20px;
     }
 
     .hero-content p{
-        font-size:16px;
+        font-size:15px;
     }
 
     .btn{
@@ -924,45 +957,65 @@ h2{
     }
 
     .about-content h2{
-        font-size:35px;
+        font-size:25px;
     }
 
     .about-content p{
-        font-size:20px;
+        font-size:15px;
     }
 
     .about-content h3{
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .about-box-container{
         grid-template-columns:1fr;
+        
     }
+    .about-btn{
+        border-radius: 5px;
+       padding: 13px;
+    }
+    
 
     /* Disease */
 
     .disease-section{
-        padding:60px 5%;
-        margin-top: -70px;
+        padding:60px 2%;
+        margin-top: -90px;
     }
 
     .disease-heading h2{
-        font-size:30px;
+        font-size:25px;
+        
     }
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
     
     .disease-container{
         grid-template-columns:1fr;
-        padding: 30px;
-  
+        padding: 25px;
+        margin-top: -30px;
     }
 
     .disease-box h3{
-        font-size:30px;
+        font-size:25px;
     }
 
+    .patientSlider iframe {
+    width: 40%;
+    height:270px;
+    border-radius: 12px;
+}
+.patients-section h2{
+    font-size: 25px;
+}
+
+.patientSlider {
+    max-width: 1200px;
+    margin: auto;
+}
     /* Why Choose Us */
 
     .choose-section{
@@ -970,7 +1023,7 @@ p{
     }
 
     .choose-heading h2{
-        font-size:27px;
+        font-size:25px;
         margin-top: 5px;
     }
 
@@ -1388,6 +1441,33 @@ h4{
         </div>
 
     </div>
+
+
+ <section class="patients-section">
+    <h2>Our Happy Patients</h2>
+
+    <div class="swiper patientSlider">
+        <div class="swiper-wrapper">
+
+            <!-- Video 1 -->
+            <div class="swiper-slide">
+                <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4380262542205842%2F&show_text=true&width=267&t=0"
+                    width="100%"
+                    height="450"
+                    style="border:none;overflow:hidden"
+                    scrolling="no"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+
+
+    </div>
+</section>
+
+
 
     
 
