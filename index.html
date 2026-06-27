@@ -632,6 +632,16 @@ h2{
     line-height:1.8;
 }
 
+.report-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    margin:15px;
+}
+
 /* CONTAINER */
 
 .contact-container{
@@ -849,8 +859,44 @@ h2{
       input[type="checkbox"]{
         display: none;
     }
+.reports-container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+    height: 250px;
+    
+}
 
+.report-card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    text-align:center;
+}
+h5{
 
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    color:#4caf50;
+
+}
+p{
+    color: #666; 
+}
+.report-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    margin:15px;
+    margin-top: 40px;
+}
 
 @media(max-width:600px){
      .menu-icon{
@@ -932,8 +978,6 @@ h2{
         padding:20px;
         margin-top: 50px;
         
-
-       
     }
 
     .hero-content h1{
@@ -1020,11 +1064,13 @@ p{
 
     .choose-section{
         padding:60px 5%;
+        margin-top: 400px;
+        position: static;
     }
 
     .choose-heading h2{
         font-size:25px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
     .choose-heading p{
@@ -1032,7 +1078,8 @@ p{
     }
 
      .choose-heading h3{
-        font-size:25px;
+        font-size:20px;
+     
     }
 
 
@@ -1044,6 +1091,13 @@ p{
 }
 .choose-card p{
 font-size: 15px;
+}
+h5{
+    font-size: 20px;
+
+}
+p{
+    font-size: 15px;
 }
 
 h4{
@@ -1469,13 +1523,51 @@ h4{
     </div>
 </section>
 
+<section class="patients-section">
+    <h2>Patients reports & recovery result</h2>
 
 
-    
+    <div class="reports-container">
 
-    
+    <div class="report-card">
+
+    <h5>Kidney Disease Recovery</h5></br>
+
+<p>Creatine reduced form 5.8 to 3.40.</p>
+
+    <a href="https://www.facebook.com/share/p/1FvKcGpj1H/" target="_blank" class="report-btn">
+        View Detailed Report
+    </a>
+</div>
+
+
+    <div class="report-card">
+
+    <h5>Kidney Disease Recovery</h5></br>
+
+  <p>Creatine reduced form 13.89 to 10.90.</p>
+
+    <a href="https://www.facebook.com/share/p/14fahMaeCXJ/" target="_blank" class="report-btn">
+        View Detailed Report
+    </a>
+</div>
+
+
+    <div class="report-card">
+
+    <h5>Kidney Disease Recovery</h5></br>
+
+  <p>Creatine reduced form 10.90 to 6.70.</p>
+
+    <a href="https://www.facebook.com/share/p/14e6SzaagWs/" target="_blank" class="report-btn">
+        View Detailed Report
+    </a>
+</div>
+
 
 </section>
+
+
 
 <section class="choose-section"  id="services">
 
