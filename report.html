@@ -1,4 +1,12 @@
-<section class="patient-reports">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="patient-reports">
 
     <div class="reports-header">
         <div>
@@ -404,17 +412,7 @@ justify-content: center;
    ACTUAL REPORT IMAGE
 ========================= */
 
-.report-image {
-    display: none;
 
-    width: 100%;
-
-    height: 390px;
-
-    object-fit: contain;
-
-    background: #f4f6f7;
-}
 
 
 /* When image exists */
@@ -482,33 +480,52 @@ justify-content: center;
 /* =========================
    MOBILE
 ========================= */
-
 @media(max-width: 800px) {
 
-    .patient-reports {
-        margin: 20px;
-        padding: 20px;
-    }
 
     .reports-header {
-        align-items: flex-start;
-
-        flex-direction: column;
-
-        gap: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        
     }
+    
 
     .reports-grid {
         grid-template-columns: 1fr;
+    
     }
+
+    
 
     .upload-area {
-        min-height: 300px;
+        min-height: 200px;
     }
 
-    .report-image {
-        height: 300px;
+    .img-report {
+        height: 200px;
     }
+    .report-box{
+        margin-top: 40px;
+    }
+    
+    .report-count{
+        display: none;
+    }
+    .reports-header h2{
+
+    font-size: 20px;
+} 
+.report-box h3 {
+    font-size: 14px;
+
+}
+
 }
 
 </style>
+
+</body>
+
+</html>
