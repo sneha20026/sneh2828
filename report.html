@@ -1,0 +1,514 @@
+<section class="patient-reports">
+
+    <div class="reports-header">
+        <div>
+            <span class="eyebrow">PATIENT DOCUMENTS</span>
+            <h2>Medical Reports</h2>
+            <p>Compare patient reports before and after treatment.</p>
+        </div>
+
+        <span class="report-count">2 Reports</span>
+    </div>
+
+
+    <div class="reports-grid">
+
+        <!-- BEFORE REPORT -->
+        <div class="report-box before-report">
+
+            <div class="report-box-header">
+                <div>
+                    <span class="report-type">BEFORE & AFTER TREATMENT</span>
+                    <h3>Medical Reports Before and after</h3>
+                </div>
+
+            
+            </div>
+
+
+            <!-- Image Upload -->
+            <label class="upload-area" id="beforeUpload">
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    onchange="showImage(event, 'beforeImage', 'beforeUpload')"
+                >
+
+            
+
+                <img src="images/report.jpeg" class="img-report">
+
+            </label>
+
+
+            <div class="report-actions">
+
+                <span class="status before-status">
+                    ● Before Treatment
+                </span>
+
+                <button type="button"
+                        onclick="removeImage('beforeImage', 'beforeUpload')">
+                    Remove
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+<script>
+
+function showImage(event, imageId, containerId) {
+
+    const file = event.target.files[0];
+
+    if (!file) return;
+
+    const image = document.getElementById(imageId);
+    const container = document.getElementById(containerId);
+    const uploadContent = container.querySelector(".upload-content");
+
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+
+        image.src = e.target.result;
+        image.style.display = "block";
+
+        uploadContent.style.display = "none";
+
+        container.classList.add("has-image");
+    };
+
+    reader.readAsDataURL(file);
+}
+
+
+function removeImage(imageId, containerId) {
+
+    const image = document.getElementById(imageId);
+    const container = document.getElementById(containerId);
+
+    const input = container.querySelector("input");
+    const uploadContent = container.querySelector(".upload-content");
+
+    image.src = "";
+    image.style.display = "none";
+
+    uploadContent.style.display = "flex";
+
+    input.value = "";
+
+    container.classList.remove("has-image");
+}
+
+</script>
+<style>
+    body{
+        background: #159a9c;
+    }
+    * {
+    box-sizing: border-box;
+}
+.img-report{
+    width: 500px;
+}
+.patient-reports {
+margin: auto;
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 35px;
+
+    background: #f9ed66;
+
+    border-radius: 28px;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: #3d3d21;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.reports-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+
+    letter-spacing: 2px;
+
+    color: #159a9c;
+}
+
+.reports-header h2 {
+    margin: 7px 0;
+
+    font-size: 30px;
+}
+
+.reports-header p {
+    margin: 0;
+
+    color: #000000;
+}
+
+.report-count {
+    background: white;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    color: #159a9c;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, .06);
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.reports-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   REPORT CARD
+========================= */
+
+.report-box {
+    background: white;
+
+    border-radius: 22px;
+    margin: 50px auto;
+    width: 500px;
+justify-content: center;
+    padding: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(35, 70, 80, .08);
+
+    transition: .3s;
+}
+.reports-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-box {
+    width: 550px;
+    max-width: 100%;
+}
+
+.report-box:hover {
+    transform: translateY(-4px);
+}
+
+
+/* BEFORE */
+
+.before-report {
+    border-top: 5px solid #85580a;
+}
+
+
+/* AFTER */
+
+.after-report {
+    border-top: 5px solid #20a477;
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.report-box-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 18px;
+}
+
+.report-type {
+    font-size: 15px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    color: #159a9c;
+}
+
+.report-box h3 {
+    margin: 5px 0 0;
+
+    font-size: 19px;
+}
+
+.date {
+    font-size: 11px;
+
+    color: #8a989f;
+
+    background: #f3f7f8;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   UPLOAD AREA
+========================= */
+
+.upload-area {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 390px;
+
+    border: 2px dashed #cbdde0;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fbfefe,
+            #f3f8f9
+        );
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.upload-area:hover {
+    border-color: #159a9c;
+
+    background: #f2fbfb;
+}
+
+
+/* Hide actual file input */
+
+.upload-area input {
+    display: none;
+}
+
+
+/* =========================
+   UPLOAD CONTENT
+========================= */
+
+.upload-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.upload-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #e7f6f6;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.upload-content h4 {
+    margin: 5px 0;
+
+    font-size: 17px;
+}
+
+.upload-content p {
+    color: #87979e;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 5px 0 12px;
+}
+
+.upload-content p span {
+    color: #159a9c;
+
+    font-weight: 700;
+}
+
+.upload-content small {
+    color: #a3afb4;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   ACTUAL REPORT IMAGE
+========================= */
+
+.report-image {
+    display: none;
+
+    width: 100%;
+
+    height: 390px;
+
+    object-fit: contain;
+
+    background: #f4f6f7;
+}
+
+
+/* When image exists */
+
+.upload-area.has-image {
+    border: 1px solid #dce8ea;
+
+    background: #f2f4f5;
+}
+
+.upload-area.has-image:hover {
+    border-color: #159a9c;
+}
+
+.upload-area.has-image .report-image {
+    display: block;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.report-actions {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.status {
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.before-status {
+    color: #d39425;
+}
+
+.after-status {
+    color: #159a73;
+}
+
+.report-actions button {
+    border: none;
+
+    background: transparent;
+
+    color: #87969d;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.report-actions button:hover {
+    color: #e05252;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 800px) {
+
+    .patient-reports {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .reports-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-area {
+        min-height: 300px;
+    }
+
+    .report-image {
+        height: 300px;
+    }
+}
+
+</style>
